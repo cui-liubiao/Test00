@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"name="viewport"content="width=device-width,inital-scale=1,user-scalable=no">
+    <link rel="short icon" href="Resource/icon.png">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <title>我的小滴</title>
+    <style>
+        .dg{
+
+            display: flex;
+            background-image: url("Resource/banner5.png");
+            background-size: cover;
+            width: 100%;
+            height: 199px;
+        }
+        .dtop{
+            text-align: center;
+            font-size: 12px;
+            width: 54px;
+            margin: auto auto;
+
+        }
+        .button1{
+            background:rgb(40,133,202);
+            font-size: 12px;
+        }
+
+        ul{
+            display: table;
+            background: red;
+            width: 100%;
+        }
+
+        a{
+            width: 15px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .md_out_div{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .md_inner_div{
+            width: 90%;
+            height: 50px;
+            line-height: 50px;
+            background-color: white;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .bg1{
+            margin-top: 15px;
+            margin-left: 10px;
+            float: left;
+            margin-right: 30px;
+        }
+        .bg2{
+            margin-top: 15px;
+        margin-right: 10px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<header><span>我的小滴</span></header>
+<div class="dg">
+    <div class="dtop">
+        <img src="Resource/head.png" alt="">
+        <span>华杉科技</span>
+        <button id="MD_btn" class="button1">退出登录</button>
+        <script>
+            var btn = document.querySelector("#MD_btn");
+            btn.onclick = function () {
+                window.location.href="MyDrop.html";
+            }
+        </script>
+    </div>
+</div>
+
+
+
+<div class="md_out_div">
+    <div class="md_inner_div">
+        <img src="Resource/gr_1.png" alt=""class="bg1"><span class="span1">我的客户</span><img src="Resource/jt.png" alt=""class="bg2">
+    </div>
+</div>
+
+<div class="md_out_div">
+    <div class="md_inner_div">
+        <img src="Resource/gr_1.png" alt=""class="bg1"><span class="span1">我的客户</span><img src="Resource/jt.png" alt=""class="bg2">
+    </div>
+</div>
+
+<div class="md_out_div">
+    <div class="md_inner_div">
+        <img src="Resource/gr_1.png" alt=""class="bg1"><span class="span1">我的客户</span><img src="Resource/jt.png" alt=""class="bg2">
+    </div>
+</div>
+
+<div class="md_out_div">
+    <div class="md_inner_div">
+        <img src="Resource/gr_1.png" alt=""class="bg1"><span class="span1">我的客户</span><img src="Resource/jt.png" alt=""class="bg2">
+    </div>
+</div>
+
+
+
+<footer>
+    <ul>
+        <a href="DropletService.html"><li><img src="Resource/nav10.png" alt=""><span>小滴服务</span></li></a>
+        <a href="EnterProgram1.html"><li><img src="Resource/nav20.png" alt=""><span>企业项目</span></li></a>
+        <a href="ServiceProcess.html"><li><img src="Resource/nav30.png" alt=""><span>服务流程</span></li></a>
+        <a href="Platformpresence.html"><li><img src="Resource/nav40.png" alt=""><span>平台风采</span></li></a>
+        <a href="MyDrop.html"><li><img src="Resource/nav51.png" alt=""><span>我的小滴</span></li></a>
+    </ul>
+</footer>
+</body>
+</html>

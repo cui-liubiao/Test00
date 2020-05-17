@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"name="viewport"content="width=device-width,inital-scale=1,user-scalable=1">
+    <link rel="short icon" href="Resource/icon.png">
+    <link rel="stylesheet" href="ExternalStyle.css">
+    <title>平台风采</title>
+    <style>
+        h3{
+            text-indent: 1em;
+        }
+        h4{
+           text-indent: 1em;
+        }
+        h5{
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header><span>平台风采</span></header>
+<div class="dg">
+    <img src="Resource/banner4.png" alt="" class="top_img">
+</div>
+
+<article>
+    <h3 id="title"></h3>
+    <h4 id="subTitle"></h4>
+    <p id="info"></p>
+
+</article>
+
+<footer>
+    <ul>
+        <a href="DropletService.html"><li><img src="Resource/nav10.png" alt=""><span>小滴服务</span></li></a>
+        <a href="EnterProgram1.html"><li><img src="Resource/nav20.png" alt=""><span>企业项目</span></li></a>
+        <a href="ServiceProcess.html"><li><img src="Resource/nav30.png" alt=""><span>服务流程</span></li></a>
+        <a href="Platformpresence.html"><li><img src="Resource/nav41.png" alt=""><span>平台风采</span></li></a>
+        <a href="MyDrop.html"><li><img src="Resource/nav50.png" alt=""><span>我的小滴</span></li></a>
+    </ul>
+</footer>
+
+</body>
+
+<script>
+        var xhr =new XMLHttpRequest();
+        xhr.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send();
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState == 4 && xhr.status == 200){
+                var res = JSON.parse(xhr.responseText);
+                var str = res.data;
+
+                var title_content = document.getElementById("title");
+                var subTitle_content = document.getElementById("subTitle");
+                var info_content = document.getElementById("info");
+
+                title_content.innerHTML = res.data.title;
+                subTitle_content.innerHTML=res.data.subTitle;
+                info_content.innerHTML=res.data.info;
+            }
+        }
+</script>
+</html>
